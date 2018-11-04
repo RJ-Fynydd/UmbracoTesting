@@ -1,0 +1,6 @@
+{
+   "mode": "backup",
+   "data_source": "server=localhost;database=JaleeMartinArt;Integrated Security=true;",
+   "output_path": "~\\gitWork\\UmbracoTesting\\JaleeMartinArt\\Database",
+   "max_thread_count": 12
+}
