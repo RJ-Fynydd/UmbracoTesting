@@ -90,19 +90,11 @@ ALTER TABLE [dbo].[umbracoExternalLogin] ADD CONSTRAINT [df_umbracoExternalLogin
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoLog] ADD CONSTRAINT [df_umbracoLog_Datestamp] DEFAULT (getdate()) FOR [Datestamp]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[umbracoRelation] ADD CONSTRAINT [df_umbracoRelation_datetime] DEFAULT (getdate()) FOR [datetime]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[umbracoMigration] ADD CONSTRAINT [df_umbracoMigration_createDate] DEFAULT (getdate()) FOR [createDate]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoServer] ADD CONSTRAINT [df_umbracoServer_registeredDate] DEFAULT (getdate()) FOR [registeredDate]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
@@ -126,6 +118,14 @@ ALTER TABLE [dbo].[cmsContentTypeAllowedContentType] ADD CONSTRAINT [df_cmsConte
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoServer] ADD CONSTRAINT [df_umbracoServer_registeredDate] DEFAULT (getdate()) FOR [registeredDate]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[cmsPropertyTypeGroup] ADD CONSTRAINT [df_cmsPropertyTypeGroup_uniqueID] DEFAULT (newid()) FOR [uniqueID]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsContentType] ADD CONSTRAINT [df_cmsContentType_thumbnail] DEFAULT ('folder.png') FOR [thumbnail]
 GO -- SQRIBE/GO;599a15
 
@@ -135,14 +135,6 @@ GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsContentType] ADD CONSTRAINT [df_cmsContentType_allowAtRoot] DEFAULT ('0') FOR [allowAtRoot]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[cmsPropertyTypeGroup] ADD CONSTRAINT [df_cmsPropertyTypeGroup_uniqueID] DEFAULT (newid()) FOR [uniqueID]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoCacheInstruction] ADD CONSTRAINT [df_umbracoCacheInstruction_instructionCount] DEFAULT ('1') FOR [instructionCount]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
@@ -163,6 +155,14 @@ GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsMemberType] ADD CONSTRAINT [df_cmsMemberType_isSensitive] DEFAULT ('0') FOR [isSensitive]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoLog] ADD CONSTRAINT [df_umbracoLog_Datestamp] DEFAULT (getdate()) FOR [Datestamp]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoCacheInstruction] ADD CONSTRAINT [df_umbracoCacheInstruction_instructionCount] DEFAULT ('1') FOR [instructionCount]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15

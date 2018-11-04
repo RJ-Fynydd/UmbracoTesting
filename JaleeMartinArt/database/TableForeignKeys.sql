@@ -9,6 +9,26 @@ PRINT N'CREATE foreign key constraints'
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoUserStartNode] WITH NOCHECK ADD CONSTRAINT [FK_umbracoUserStartNode_umbracoUser_id] FOREIGN KEY([userId]) 
+REFERENCES [dbo].[umbracoUser] ([id]) 
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoUserStartNode] WITH NOCHECK ADD CONSTRAINT [FK_umbracoUserStartNode_umbracoNode_id] FOREIGN KEY([startNode]) 
+REFERENCES [dbo].[umbracoNode] ([id]) 
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoUserLogin] WITH NOCHECK ADD CONSTRAINT [FK_umbracoUserLogin_umbracoUser_id] FOREIGN KEY([userId]) 
+REFERENCES [dbo].[umbracoUser] ([id]) 
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[cmsMemberType] WITH NOCHECK ADD CONSTRAINT [FK_cmsMemberType_umbracoNode_id] FOREIGN KEY([NodeId]) 
+REFERENCES [dbo].[umbracoNode] ([id]) 
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsMemberType] WITH NOCHECK ADD CONSTRAINT [FK_cmsMemberType_cmsContentType_nodeId] FOREIGN KEY([NodeId]) 
 REFERENCES [dbo].[cmsContentType] ([nodeId]) 
 GO -- SQRIBE/GO;599a15
@@ -326,24 +346,4 @@ GO -- SQRIBE/GO;599a15
 -- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsMacroProperty] WITH NOCHECK ADD CONSTRAINT [FK_cmsMacroProperty_cmsMacro_id] FOREIGN KEY([macro]) 
 REFERENCES [dbo].[cmsMacro] ([id]) 
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoUserStartNode] WITH NOCHECK ADD CONSTRAINT [FK_umbracoUserStartNode_umbracoUser_id] FOREIGN KEY([userId]) 
-REFERENCES [dbo].[umbracoUser] ([id]) 
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoUserStartNode] WITH NOCHECK ADD CONSTRAINT [FK_umbracoUserStartNode_umbracoNode_id] FOREIGN KEY([startNode]) 
-REFERENCES [dbo].[umbracoNode] ([id]) 
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoUserLogin] WITH NOCHECK ADD CONSTRAINT [FK_umbracoUserLogin_umbracoUser_id] FOREIGN KEY([userId]) 
-REFERENCES [dbo].[umbracoUser] ([id]) 
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[cmsMemberType] WITH NOCHECK ADD CONSTRAINT [FK_cmsMemberType_umbracoNode_id] FOREIGN KEY([NodeId]) 
-REFERENCES [dbo].[umbracoNode] ([id]) 
 GO -- SQRIBE/GO;599a15

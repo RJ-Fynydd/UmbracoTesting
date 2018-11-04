@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 4 rows to dbo.cmsContentType...'
+PRINT N'Add 5 rows to dbo.cmsContentType...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[cmsContentType] ON
@@ -22,6 +22,8 @@ INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[de
 INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (533,1032,N'Image',N'icon-picture',N'icon-picture',NULL,0,1);
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (534,1033,N'File',N'icon-document',N'icon-document',NULL,0,1);
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (535,1053,N'home',N'icon-home color-blue',N'folder.png',NULL,0,0);
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 31 rows to dbo.umbracoNode...'
+PRINT N'Add 34 rows to dbo.umbracoNode...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[umbracoNode] ON
@@ -76,6 +76,12 @@ INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[p
 INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1049,0,-1,0,1,N'-1,1049',2,'9DBBCBBB-2327-434A-B355-AF1B84E5010A',N'Multiple Media Picker','30A2A501-1978-4DDB-A57B-F7EFED43BA3C',CONVERT(datetime,'2018-11-04 01:18:29.257',121));
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1050,0,-1,0,1,N'-1,1050',2,'B4E3535A-1753-47E2-8568-602CF8CFEE6F',N'Related Links','30A2A501-1978-4DDB-A57B-F7EFED43BA3C',CONVERT(datetime,'2018-11-04 01:18:29.257',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1051,0,-1,NULL,1,N'-1,1051',0,'EBB581C7-5174-4A26-91E2-3BDBCBD4FE6E',N'WebBase','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-04 12:41:22.917',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1053,0,-1,0,1,N'-1,1053',0,'9FCED451-1427-4415-93C3-FECAE61F0F20',N'Home','A2CB7800-F571-4787-9638-BC48539A0EFB',CONVERT(datetime,'2018-11-04 12:42:17.210',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1055,0,1051,NULL,1,N'-1,1051,1055',0,'62794823-A43F-4950-AD6E-09B1F191169E',N'Home','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-04 12:46:11.637',121));
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

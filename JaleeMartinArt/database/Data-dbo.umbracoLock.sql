@@ -15,7 +15,7 @@ GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[umbracoLock] ON
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[umbracoLock] ([id],[value],[name]) VALUES (-331,1,N'Servers');
+INSERT INTO [dbo].[umbracoLock] ([id],[value],[name]) VALUES (-331,-1,N'Servers');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 
