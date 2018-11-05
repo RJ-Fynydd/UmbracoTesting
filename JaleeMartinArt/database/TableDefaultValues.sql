@@ -6,22 +6,6 @@ SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[cmsContentVersion] ADD CONSTRAINT [df_cmsContentVersion_VersionDate] DEFAULT (getdate()) FOR [VersionDate]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[cmsDocument] ADD CONSTRAINT [df_cmsDocument_updateDate] DEFAULT (getdate()) FOR [updateDate]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[cmsDocument] ADD CONSTRAINT [df_cmsDocument_newest] DEFAULT ('0') FOR [newest]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[cmsDocumentType] ADD CONSTRAINT [df_cmsDocumentType_IsDefault] DEFAULT ('0') FOR [IsDefault]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsMacro] ADD CONSTRAINT [df_cmsMacro_macroUseInEditor] DEFAULT ('0') FOR [macroUseInEditor]
 GO -- SQRIBE/GO;599a15
 
@@ -94,7 +78,23 @@ ALTER TABLE [dbo].[umbracoRelation] ADD CONSTRAINT [df_umbracoRelation_datetime]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[cmsDocumentType] ADD CONSTRAINT [df_cmsDocumentType_IsDefault] DEFAULT ('0') FOR [IsDefault]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[umbracoMigration] ADD CONSTRAINT [df_umbracoMigration_createDate] DEFAULT (getdate()) FOR [createDate]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[cmsContentVersion] ADD CONSTRAINT [df_cmsContentVersion_VersionDate] DEFAULT (getdate()) FOR [VersionDate]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[cmsDocument] ADD CONSTRAINT [df_cmsDocument_updateDate] DEFAULT (getdate()) FOR [updateDate]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[cmsDocument] ADD CONSTRAINT [df_cmsDocument_newest] DEFAULT ('0') FOR [newest]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
@@ -162,10 +162,6 @@ ALTER TABLE [dbo].[umbracoLog] ADD CONSTRAINT [df_umbracoLog_Datestamp] DEFAULT 
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
-ALTER TABLE [dbo].[umbracoCacheInstruction] ADD CONSTRAINT [df_umbracoCacheInstruction_instructionCount] DEFAULT ('1') FOR [instructionCount]
-GO -- SQRIBE/GO;599a15
-
--- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsPropertyType] ADD CONSTRAINT [df_cmsPropertyType_sortOrder] DEFAULT ('0') FOR [sortOrder]
 GO -- SQRIBE/GO;599a15
 
@@ -175,6 +171,10 @@ GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15
 ALTER TABLE [dbo].[cmsPropertyType] ADD CONSTRAINT [df_cmsPropertyType_UniqueID] DEFAULT (newid()) FOR [UniqueID]
+GO -- SQRIBE/GO;599a15
+
+-- SQRIBE/OBJ;599a15
+ALTER TABLE [dbo].[umbracoCacheInstruction] ADD CONSTRAINT [df_umbracoCacheInstruction_instructionCount] DEFAULT ('1') FOR [instructionCount]
 GO -- SQRIBE/GO;599a15
 
 -- SQRIBE/OBJ;599a15

@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 6 rows to dbo.umbracoUserLogin...'
+PRINT N'Add 9 rows to dbo.umbracoUserLogin...'
 GO -- SQRIBE/GO;599a15
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastValidatedUtc],[loggedOutUtc],[ipAddress]) VALUES ('A0279B64-6D3D-4B59-BECC-0A00690CBF10',0,CONVERT(datetime,'2018-11-04 06:33:47.100',121),CONVERT(datetime,'2018-11-04 06:33:47.100',121),CONVERT(datetime,NULL,121),N'127.0.0.1');
@@ -23,7 +23,13 @@ INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastVa
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastValidatedUtc],[loggedOutUtc],[ipAddress]) VALUES ('BC942932-6DE0-47B6-89E4-75F3641689CB',0,CONVERT(datetime,'2018-11-04 17:40:29.083',121),CONVERT(datetime,'2018-11-04 17:46:14.093',121),CONVERT(datetime,NULL,121),N'127.0.0.1');
 -- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastValidatedUtc],[loggedOutUtc],[ipAddress]) VALUES ('7A8AEC9B-150F-453C-8F73-9B6C2BDFBD58',0,CONVERT(datetime,'2018-11-05 19:15:47.570',121),CONVERT(datetime,'2018-11-05 19:24:24.650',121),CONVERT(datetime,NULL,121),N'127.0.0.1');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastValidatedUtc],[loggedOutUtc],[ipAddress]) VALUES ('42E957CB-D12B-419D-95A3-F96C5B4C1365',0,CONVERT(datetime,'2018-11-05 18:40:53.443',121),CONVERT(datetime,'2018-11-05 18:40:53.443',121),CONVERT(datetime,NULL,121),N'127.0.0.1');
+-- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastValidatedUtc],[loggedOutUtc],[ipAddress]) VALUES ('09E65FD4-ACFA-4FC4-89B1-FD43807469BD',0,CONVERT(datetime,'2018-11-04 07:44:37.760',121),CONVERT(datetime,'2018-11-04 07:44:37.760',121),CONVERT(datetime,NULL,121),N'127.0.0.1');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoUserLogin] ([sessionId],[userId],[loggedInUtc],[lastValidatedUtc],[loggedOutUtc],[ipAddress]) VALUES ('29433F8D-1FB6-48D9-B414-FFAD867A562A',0,CONVERT(datetime,'2018-11-05 19:15:13.223',121),CONVERT(datetime,'2018-11-05 19:15:13.223',121),CONVERT(datetime,'2018-11-05 19:15:45.270',121),N'127.0.0.1');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

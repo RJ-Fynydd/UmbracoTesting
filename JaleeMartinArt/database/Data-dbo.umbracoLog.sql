@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 11 rows to dbo.umbracoLog...'
+PRINT N'Add 16 rows to dbo.umbracoLog...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[umbracoLog] ON
@@ -36,6 +36,16 @@ INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[
 INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (10,0,1054,CONVERT(datetime,'2018-11-04 12:45:59.760',121),N'Delete',N'Delete Template performed by user');
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (11,0,0,CONVERT(datetime,'2018-11-04 12:46:11.667',121),N'Save',N'Save Template performed by user');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (12,0,0,CONVERT(datetime,'2018-11-05 14:18:43.487',121),N'Publish',N'Save and Publish performed by user');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (13,0,1051,CONVERT(datetime,'2018-11-05 14:23:09.563',121),N'Save',N'Save Template performed by user');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (14,0,1055,CONVERT(datetime,'2018-11-05 14:23:15.380',121),N'Save',N'Save Template performed by user');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (15,0,1053,CONVERT(datetime,'2018-11-05 14:23:42.897',121),N'Save',N'Save ContentType performed by user');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoLog] ([id],[userId],[NodeId],[Datestamp],[logHeader],[logComment]) VALUES (16,0,1056,CONVERT(datetime,'2018-11-05 14:23:51.467',121),N'Publish',N'Save and Publish performed by user');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 
