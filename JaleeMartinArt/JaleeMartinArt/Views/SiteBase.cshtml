@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.SiteBase>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>@Umbraco.Field("metaTitle")</title>
+        <meta name="author" content="@Umbraco.Field("metaAuthor")">
+        <meta name="description" content="@Umbraco.Field("metaDescription")">
+        <meta name="keywords" content="@Umbraco.Field("metaTags")">
+    </head>
+    
+    
+    <body>
+        <div>
+            <h1 style="text-align: center;">@Umbraco.Field("pageName")</h1>
+        </div>
+        @RenderBody()
+        
+    </body>
+    
+    
+</html>
