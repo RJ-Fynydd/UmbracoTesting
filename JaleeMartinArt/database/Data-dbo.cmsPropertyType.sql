@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 18 rows to dbo.cmsPropertyType...'
+PRINT N'Add 22 rows to dbo.cmsPropertyType...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[cmsPropertyType] ON
@@ -50,6 +50,14 @@ INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[property
 INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[propertyTypeGroupId],[Alias],[Name],[sortOrder],[mandatory],[validationRegExp],[Description],[UniqueID]) VALUES (35,-92,1044,NULL,N'umbracoMemberPasswordRetrievalAnswer',N'Password Answer',0,0,NULL,NULL,'2C7A66A4-C6BF-400D-A7B7-1F0B5553D533');
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[propertyTypeGroupId],[Alias],[Name],[sortOrder],[mandatory],[validationRegExp],[Description],[UniqueID]) VALUES (36,-92,1044,NULL,N'umbracoMemberPasswordRetrievalQuestion',N'Password Question',1,0,NULL,NULL,'E3FCB192-3015-4463-8D7E-158D094A0584');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[propertyTypeGroupId],[Alias],[Name],[sortOrder],[mandatory],[validationRegExp],[Description],[UniqueID]) VALUES (41,-88,1059,14,N'metaTitle',N'Meta Title',0,1,NULL,NULL,'CBAAF58B-0D1E-436E-B1C0-0C35D3B00E38');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[propertyTypeGroupId],[Alias],[Name],[sortOrder],[mandatory],[validationRegExp],[Description],[UniqueID]) VALUES (42,-88,1059,14,N'metaDescription',N'Meta Description',2,0,NULL,NULL,'29B4BB10-7FC6-4685-86CF-9FA8899AD7C9');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[propertyTypeGroupId],[Alias],[Name],[sortOrder],[mandatory],[validationRegExp],[Description],[UniqueID]) VALUES (43,1041,1059,14,N'metaTags',N'Meta Tags',3,0,NULL,NULL,'61AAF08A-936D-439E-95FB-2FD0F24813CC');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsPropertyType] ([id],[dataTypeId],[contentTypeId],[propertyTypeGroupId],[Alias],[Name],[sortOrder],[mandatory],[validationRegExp],[Description],[UniqueID]) VALUES (44,-88,1059,14,N'metaAuthor',N'Meta Author',1,0,NULL,NULL,'16638C82-CE5A-4A6E-B06D-87CE1B34DC5E');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

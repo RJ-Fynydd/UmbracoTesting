@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 35 rows to dbo.umbracoNode...'
+PRINT N'Add 39 rows to dbo.umbracoNode...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[umbracoNode] ON
@@ -77,13 +77,21 @@ INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[p
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1050,0,-1,0,1,N'-1,1050',2,'B4E3535A-1753-47E2-8568-602CF8CFEE6F',N'Related Links','30A2A501-1978-4DDB-A57B-F7EFED43BA3C',CONVERT(datetime,'2018-11-04 01:18:29.257',121));
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1051,0,-1,NULL,1,N'-1,1051',0,'EBB581C7-5174-4A26-91E2-3BDBCBD4FE6E',N'WebBase','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-04 12:41:22.917',121));
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1058,0,-1,NULL,1,N'-1,1058',0,'4115721B-00BE-49A7-8F63-F8527AA00B4F',N'SiteBase','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-06 00:00:59.900',121));
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1053,0,-1,0,1,N'-1,1053',1,'9FCED451-1427-4415-93C3-FECAE61F0F20',N'Home','A2CB7800-F571-4787-9638-BC48539A0EFB',CONVERT(datetime,'2018-11-04 12:42:17.210',121));
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1059,0,-1,0,1,N'-1,1059',7,'2326A6EF-E18D-47FA-B9DC-A14BB2FEDBEC',N'SiteBase','A2CB7800-F571-4787-9638-BC48539A0EFB',CONVERT(datetime,'2018-11-06 00:00:59.937',121));
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1055,0,1051,NULL,1,N'-1,1051,1055',0,'62794823-A43F-4950-AD6E-09B1F191169E',N'Home','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-04 12:46:11.637',121));
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1062,0,1058,NULL,1,N'-1,1058,1062',0,'40AD04B6-29FC-48D8-AF94-6B7DA7A51E24',N'Home','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-06 00:03:26.600',121));
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1056,0,-1,0,1,N'-1,1056',0,'26012471-C90A-4989-ABAF-36B9C15AE86E',N'Home','C66BA18E-EAF3-4CFF-8A22-41B16D66A972',CONVERT(datetime,'2018-11-05 14:18:43.433',121));
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1063,0,1059,0,2,N'-1,1059,1063',3,'E39C2EF6-43D9-4CDC-8AF0-64B543B091EB',N'Home','A2CB7800-F571-4787-9638-BC48539A0EFB',CONVERT(datetime,'2018-11-06 00:03:26.633',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1064,0,1058,NULL,1,N'-1,1058,1064',0,'A2711E53-B21B-45A9-9660-4E6CC9CD14EB',N'About','6FBDE604-4178-42CE-A10B-8A2600A2F07D',CONVERT(datetime,'2018-11-06 00:03:45.423',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1065,0,1059,0,2,N'-1,1059,1065',1,'76EAAA27-97DD-4391-BEFE-008733084009',N'About','A2CB7800-F571-4787-9638-BC48539A0EFB',CONVERT(datetime,'2018-11-06 00:03:45.463',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1067,0,-1,0,1,N'-1,1067',0,'BFEB3A2F-A77C-4DD9-A6F2-EA56E4E59FB4',N'Home','C66BA18E-EAF3-4CFF-8A22-41B16D66A972',CONVERT(datetime,'2018-11-06 00:15:52.193',121));
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoNode] ([id],[trashed],[parentID],[nodeUser],[level],[path],[sortOrder],[uniqueID],[text],[nodeObjectType],[createDate]) VALUES (1068,0,1067,0,2,N'-1,1067,1068',0,'2C08CFCA-6CBA-4B52-A612-175DBA6B574D',N'About','C66BA18E-EAF3-4CFF-8A22-41B16D66A972',CONVERT(datetime,'2018-11-06 00:18:25.123',121));
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 3 rows to dbo.cmsContentTypeAllowedContentType...'
+PRINT N'Add 4 rows to dbo.cmsContentTypeAllowedContentType...'
 GO -- SQRIBE/GO;599a15
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsContentTypeAllowedContentType] ([Id],[AllowedId],[SortOrder]) VALUES (1031,1031,0);
@@ -18,6 +18,8 @@ INSERT INTO [dbo].[cmsContentTypeAllowedContentType] ([Id],[AllowedId],[SortOrde
 INSERT INTO [dbo].[cmsContentTypeAllowedContentType] ([Id],[AllowedId],[SortOrder]) VALUES (1031,1032,0);
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsContentTypeAllowedContentType] ([Id],[AllowedId],[SortOrder]) VALUES (1031,1033,0);
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsContentTypeAllowedContentType] ([Id],[AllowedId],[SortOrder]) VALUES (1063,1065,0);
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

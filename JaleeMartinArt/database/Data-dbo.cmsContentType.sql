@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 5 rows to dbo.cmsContentType...'
+PRINT N'Add 7 rows to dbo.cmsContentType...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[cmsContentType] ON
@@ -23,7 +23,11 @@ INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[de
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (534,1033,N'File',N'icon-document',N'icon-document',NULL,0,1);
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (535,1053,N'home',N'icon-home color-blue',N'folder.png',NULL,0,0);
+INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (537,1059,N'siteBase',N'icon-document',N'folder.png',NULL,0,0);
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (539,1063,N'home',N'icon-document',N'folder.png',NULL,0,1);
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsContentType] ([pk],[nodeId],[alias],[icon],[thumbnail],[description],[isContainer],[allowAtRoot]) VALUES (540,1065,N'about',N'icon-document',N'folder.png',NULL,0,0);
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

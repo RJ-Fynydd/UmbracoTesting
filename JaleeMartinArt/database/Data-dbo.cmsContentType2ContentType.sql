@@ -10,14 +10,12 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 2 rows to dbo.cmsContent...'
+PRINT N'Add 2 rows to dbo.cmsContentType2ContentType...'
 GO -- SQRIBE/GO;599a15
-
-SET IDENTITY_INSERT [dbo].[cmsContent] ON
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[cmsContent] ([pk],[nodeId],[contentType]) VALUES (2,1067,1063);
+INSERT INTO [dbo].[cmsContentType2ContentType] ([parentContentTypeId],[childContentTypeId]) VALUES (1059,1063);
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[cmsContent] ([pk],[nodeId],[contentType]) VALUES (3,1068,1065);
+INSERT INTO [dbo].[cmsContentType2ContentType] ([parentContentTypeId],[childContentTypeId]) VALUES (1059,1065);
 
 IF @@ERROR <> 0 SET NOEXEC ON
 
@@ -29,10 +27,8 @@ DECLARE @Success AS BIT
 SET @Success = 1
 SET NOEXEC OFF
 
-IF (@Success = 1) PRINT 'Restore table data dbo.cmsContent succeeded'
+IF (@Success = 1) PRINT 'Restore table data dbo.cmsContentType2ContentType succeeded'
 ELSE BEGIN
     IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION
-    PRINT 'Restore table data dbo.cmsContent failed'
+    PRINT 'Restore table data dbo.cmsContentType2ContentType failed'
 END
-
-SET IDENTITY_INSERT [dbo].[cmsContent] OFF

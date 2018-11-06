@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 4 rows to dbo.cmsPropertyTypeGroup...'
+PRINT N'Add 5 rows to dbo.cmsPropertyTypeGroup...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[cmsPropertyTypeGroup] ON
@@ -22,6 +22,8 @@ INSERT INTO [dbo].[cmsPropertyTypeGroup] ([id],[contenttypeNodeId],[text],[sorto
 INSERT INTO [dbo].[cmsPropertyTypeGroup] ([id],[contenttypeNodeId],[text],[sortorder],[uniqueID]) VALUES (5,1031,N'Contents',1,'79995FA2-63EE-453C-A29B-2E66F324CDBE');
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsPropertyTypeGroup] ([id],[contenttypeNodeId],[text],[sortorder],[uniqueID]) VALUES (11,1044,N'Membership',1,'0756729D-D665-46E3-B84A-37ACEAA614F8');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsPropertyTypeGroup] ([id],[contenttypeNodeId],[text],[sortorder],[uniqueID]) VALUES (14,1059,N'SEO',0,'3F1EE7B7-2B4B-4D23-8CF7-6905284A8D0E');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

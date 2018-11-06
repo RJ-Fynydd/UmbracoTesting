@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 13 rows to dbo.cmsDataTypePreValues...'
+PRINT N'Add 14 rows to dbo.cmsDataTypePreValues...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[cmsDataTypePreValues] ON
@@ -33,13 +33,38 @@ INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortord
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (-1,-97,N'10',1,N'pageSize');
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (3,-87,N',code,undo,redo,cut,copy,mcepasteword,stylepicker,bold,italic,bullist,numlist,outdent,indent,mcelink,unlink,mceinsertanchor,mceimage,umbracomacro,mceinserttable,umbracoembed,mcecharmap,|1|1,2,3,|0|500,400|1049,|true|',0,N'');
--- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (4,1041,N'default',0,N'group');
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (5,1041,N'Json',0,N'storageType');
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (6,1049,N'1',0,N'multiPicker');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (7,-87,N'{
+  "toolbar": [
+    "code",
+    "styleselect",
+    "bold",
+    "italic",
+    "alignleft",
+    "aligncenter",
+    "alignright",
+    "bullist",
+    "numlist",
+    "outdent",
+    "indent",
+    "link",
+    "umbmediapicker",
+    "umbmacro",
+    "umbembeddialog"
+  ],
+  "stylesheets": [],
+  "dimensions": {
+    "height": 500
+  },
+  "maxImageSize": 500
+}',1,N'editor');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsDataTypePreValues] ([id],[datatypeNodeId],[value],[sortorder],[alias]) VALUES (8,-87,N'0',2,N'hideLabel');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

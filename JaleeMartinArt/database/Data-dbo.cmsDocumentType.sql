@@ -10,10 +10,14 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 1 row to dbo.cmsDocumentType...'
+PRINT N'Add 3 rows to dbo.cmsDocumentType...'
 GO -- SQRIBE/GO;599a15
 -- SQRIBE/INSERT;599a15
-INSERT INTO [dbo].[cmsDocumentType] ([contentTypeNodeId],[templateNodeId],[IsDefault]) VALUES (1053,1055,1);
+INSERT INTO [dbo].[cmsDocumentType] ([contentTypeNodeId],[templateNodeId],[IsDefault]) VALUES (1059,1058,1);
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsDocumentType] ([contentTypeNodeId],[templateNodeId],[IsDefault]) VALUES (1063,1062,1);
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[cmsDocumentType] ([contentTypeNodeId],[templateNodeId],[IsDefault]) VALUES (1065,1064,1);
 
 IF @@ERROR <> 0 SET NOEXEC ON
 

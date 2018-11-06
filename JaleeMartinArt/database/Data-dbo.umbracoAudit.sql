@@ -10,7 +10,7 @@ IF @@ERROR <> 0 SET NOEXEC ON
 BEGIN TRANSACTION
 
 -- SQRIBE/TABLE;599a15
-PRINT N'Add 29 rows to dbo.umbracoAudit...'
+PRINT N'Add 38 rows to dbo.umbracoAudit...'
 GO -- SQRIBE/GO;599a15
 
 SET IDENTITY_INSERT [dbo].[umbracoAudit] ON
@@ -72,6 +72,24 @@ INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[p
 INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (28,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-05 19:15:47.563',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/save',N'updating LastLoginDate, UpdateDate');
 -- SQRIBE/INSERT;599a15
 INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (29,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-05 19:15:47.563',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/sign-in/login',N'login success');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (30,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-06 02:11:39.357',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/save',N'updating LastLoginDate, UpdateDate');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (31,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-06 02:11:39.483',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/sign-in/login',N'login success');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (32,0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'127.0.0.1',CONVERT(datetime,'2018-11-06 02:31:28.440',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/save',N'updating LastLoginDate, UpdateDate');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (33,0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'127.0.0.1',CONVERT(datetime,'2018-11-06 02:31:28.457',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/sign-in/login',N'login success');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (34,0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'127.0.0.1',CONVERT(datetime,'2018-11-06 02:31:31.027',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/save',N'updating TourData, UpdateDate');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (35,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-06 04:18:10.363',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/save',N'updating LastLoginDate, UpdateDate');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (36,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-06 04:18:10.430',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/sign-in/login',N'login success');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (37,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-06 05:00:12.047',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/save',N'updating LastLoginDate, UpdateDate');
+-- SQRIBE/INSERT;599a15
+INSERT INTO [dbo].[umbracoAudit] ([id],[performingUserId],[performingDetails],[performingIp],[eventDateUtc],[affectedUserId],[affectedDetails],[eventType],[eventDetails]) VALUES (38,0,N'User "SYSTEM" ',N'127.0.0.1',CONVERT(datetime,'2018-11-06 05:00:12.057',121),0,N'User "Richard Nader, Jr" <richard.nader@fynydd.com>',N'umbraco/user/sign-in/login',N'login success');
 
 IF @@ERROR <> 0 SET NOEXEC ON
 
